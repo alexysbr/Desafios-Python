@@ -1,0 +1,1 @@
+'''Recebe nome, idade, sexo, de 4 pessoas, devolve a media de idade, o nome do homem mais velho e a quantidade de mulheres menores de 20 anos'''
