@@ -7,7 +7,7 @@ while True:
     pessoa['nome'] = str(input('Nome: '))
     while True:
         pessoa['sexo'] = str(input('Sexo: [M/F] '))
-        if pessoa['sexo'] in 'MF':
+        if pessoa['sexo'] in 'MFmf':
             break
         print(('Erro! Valor inválido!'))
     pessoa['idade'] = int(input('Idade: '))
@@ -15,10 +15,10 @@ while True:
     galera.append(pessoa.copy())
     while True:
         resp = str(input('Deseja continuar? [S/N] '))
-        if resp in 'SN':
+        if resp in 'SNsn':
             break
         print('Erro! Valor inválido!')
-    if resp =='N':
+    if resp =='N' or resp =='n':
         break
 print(f'A) Ao todo temos {len(galera)} pessoas cadastradas.')
 media = soma / len(galera)
